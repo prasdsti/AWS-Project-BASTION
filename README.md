@@ -1,26 +1,36 @@
 # awsproject1
 aws project for Leo
 
+
 ------ NAT Creation for Elastic IPs-----
+
 1/ Create a NAT gateway
 
 2/ Open the Amazon VPC console at https://console.aws.amazon.com/vpc/.
 
 3/ In the navigation pane, choose NAT Gateways, Create NAT Gateway.
 
-4/ Specify the subnet in which to create the NAT gateway and select an Elastic IP address allocation ID to associate with the NAT gateway. When finished, choose Create a NAT Gateway.
-	The NAT gateway appears in the console. After a few moments, her status changes to Available, after which she is ready to use.
+4/ Specify the subnet in which to create the NAT gateway and select an Elastic IP address allocation ID to associate with the NAT gateway. When finished, choose Create a NAT Gateway.The NAT gateway appears in the console. After a few moments, her status changes to Available, after which she is ready to use.
 
------- Create your VPC ---------	
+
+------ Create your VPC ---------
 
 5/ In the AWS Management Console, on the Services menu, click VPC.
+
 6/ Click Start VPC Wizard.
+
 7/ In the navigation pane, click VPC with Public and Private Subnets.
+
 8/ Click Select.
+
 9/ Configure the following settings (and ignore any settings that aren't listed):
+
 	a/ IPV4CIDR block: Type: 10. 0. 0. 0/16
+	
 	b/ VPC name: "AWS Project 1"
+	
 	c/ Public subnet's IPv4 CIDR: Type 10. 0. 1. 0/24 You can safely ignore the
+	
 		error: Public and private subnet CIDR blocks overlap. You will fix this when you
 		change the value below.
 	d/ Availability Zone: Click the first Availability Zone.
