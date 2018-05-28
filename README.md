@@ -3,8 +3,11 @@ aws project for Leo
 
 ------ NAT Creation for Elastic IPs-----
 1/ Create a NAT gateway
+
 2/ Open the Amazon VPC console at https://console.aws.amazon.com/vpc/.
+
 3/ In the navigation pane, choose NAT Gateways, Create NAT Gateway.
+
 4/ Specify the subnet in which to create the NAT gateway and select an Elastic IP address allocation ID to associate with the NAT gateway. When finished, choose Create a NAT Gateway.
 	The NAT gateway appears in the console. After a few moments, her status changes to Available, after which she is ready to use.
 
