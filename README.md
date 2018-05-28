@@ -2,6 +2,7 @@
 aws project for Leo
 
 ------ NAT Creation for Elastic IPs-----
+
 1/ Create a NAT gateway
 2/ Open the Amazon VPC console at https://console.aws.amazon.com/vpc/.
 3/ In the navigation pane, choose NAT Gateways, Create NAT Gateway.
@@ -9,6 +10,7 @@ aws project for Leo
 	The NAT gateway appears in the console. After a few moments, her status changes to Available, after which she is ready to use.
 
 ------ Create your VPC ---------	
+
 5/ In the AWS Management Console, on the Services menu, click VPC.
 6/ Click Start VPC Wizard.
 7/ In the navigation pane, click VPC with Public and Private Subnets.
@@ -32,6 +34,7 @@ aws project for Leo
 11/	In the success message, click OK.
 
 ------- Create Security Group -----
+
 12/ In the navigation pane, click Security Groups.
 13/ Click Create Security Group.
 14/ In the Create Security Group dialog box, configure the following settings (and ignore
@@ -51,6 +54,7 @@ aws project for Leo
 
 
 ------- Create Web Server Instance ------
+
 22/ On the Services menu, click EC2.
 23/ Click Launch Instance.
 24/ In the row for Amazon Linux AM, click Select. If you receive a warning, click
