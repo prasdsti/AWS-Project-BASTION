@@ -4,10 +4,7 @@
 	b/ On left pan: "Key Pairs"
 	c/ Create Key Pair
 	d/ Enter the name you want then create
-2/ You have your "PEM" key but you need also your "PPK" to connect to your EC2 linux instances, for that you need to donwload Putty package to use "Putty Key Generator" to create your "PPK" version of your "PEM" key. 
-	a/ Open "Putty Key Generator"
-	b/ Load your "PEM" key
-	c/ Generate your "PPK" Key and then save it in location you want
+
 
 ------ Elastic IPs -----
 3/ Create 2 Elastic IPs, one for the NAT Gateway and one for the BASTION
@@ -114,16 +111,13 @@
 
 		
 ---- Connect to your BASTION then to your WEBSERVER and ping google.com -----
-63/ Open "Putty"
-	a/ in host name or IP address enter your BASTION IP
-	b/ in "connection" part expand "SSH" and go to "Auth"
-	c/ load your "PPK" key you have previously created
-	d/ Then Open, new sheel will be opened
-64/ From the opened shell
-	a/ Login as "ec2-user"
-	b/ Once your in BASTION, do an "ssh <your WEBSERVER local IP>" to connect to your WEBSERVER instance
-	c/ ping google.com
-	
+63/ Open the windows "Power Shell" or "Ubuntu Shell"
+64/ Go into the directory where you have your "PEM" key
+65/ Copy your PEM key in your BASTION using scp: scp -i "Your_PEM_Key" Your_PEM_Key Your_Public_BASTION_IP  
+65/ Connect to your BASTION using SSH, tape in your shell: ssh -i "Your_PEM_Key" Your_Public_BASTION_IP
+66/ Once connected on your BASTION connect to your WEBSERVER using SSH: ssh -i "Your_PEM_Key" Your_Private_WEBSERVER_IP
+67/ And ping google: ping google.com or ping 8.8.8.8
+
 That's ALL!
 
 		
