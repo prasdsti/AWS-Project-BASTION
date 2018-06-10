@@ -3,7 +3,7 @@ AWS Project BASTION: Create a VPC with public and private subnets, add a BASTION
 
 # Building Network schematic: 
 <p align="center">
-<img src="https://github.com/prasdsti/AWS-Project-BASTION/blob/master/AWS_Project_Bastion_Network.jpg" alt="BASTION Network">
+<img src="https://github.com/prasdsti/AWS-Project-BASTION/blob/master/AWS_Project_Bastion_Network1.jpg" alt="BASTION Network">
 </p>
 
 # How to build it: https://github.com/prasdsti/AWS-Project-BASTION/blob/master/AWS_Project_BASTION_ReadMe.txt
